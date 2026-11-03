@@ -606,16 +606,13 @@ function Stage({ ctx, rec, st, comps, comp, fi, setFrame, kinds, mode, setMode, 
             <button className={mode === 'guide' ? 'on' : ''} onClick={() => setMode('guide')}>Placement guide</button>
             <button className={mode === 'clean' ? 'on' : ''} onClick={() => setMode('clean')}>Clean artwork</button>
           </div>
-          <label className="check sm"><input id="safe-toggle" type="checkbox" checked={safe} onChange={(e) => setSafe(e.target.checked)} /> Safe zones</label>
+          <label className="check sm"><input id="safe-toggle" type="checkbox" checked={safe} onChange={(e) => setSafe(e.target.checked)} /> Show top safe zone</label>
         </div>
       </div>
       <div className="storybox-wrap">
         <div className="storybox" ref={boxRef}>
           <StoryCanvas comp={comp} mode={mode} className="storycanvas" label={`Story preview, ${rec.id}, frame ${fi + 1}`} />
-          {safe && (<>
-            <div className="safe top" style={{ height: pct(SAFE_T, H) }}><span>Top 250 px: profile and progress bar</span></div>
-            <div className="safe bottom" style={{ height: pct(H - SAFE_B, H) }}><span>Bottom 300 px: reply bar</span></div>
-          </>)}
+          {safe && <div className="safe top" style={{ height: pct(SAFE_T, H) }}><span>Instagram’s name and progress bar · not exported</span></div>}
           {sourceHit && okUrl && <a className="hotspot" href={url} target="_blank" rel="noopener noreferrer" title={'Open source: ' + url} style={{ left: pct(sourceHit.x, W), top: pct(sourceHit.y, H), width: pct(sourceHit.w, W), height: pct(sourceHit.h, H) }}><span className="sr">Open the source</span></a>}
           {comp.sticker && (
             <div className={'stickerhandle' + (drag ? ' dragging' : '')} tabIndex={0} role="slider" aria-label="Link sticker position. Drag, or use arrow keys." aria-valuetext={`x ${comp.sticker.x}, y ${comp.sticker.y}`}
