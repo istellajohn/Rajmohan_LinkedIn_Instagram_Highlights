@@ -1,0 +1,7 @@
+{
+  "name": "sreepriya-editorial-story-room",
+  "private": true,
+  "description": "Sreepriya N S | The Editorial Story Room. Instagram Story and highlight-cover studio for Sreepriya N S's public archive.",
+  "scripts": { "build": "python3 build.py" },
+  "devDependencies": { "esbuild": "0.24.0" }
+}

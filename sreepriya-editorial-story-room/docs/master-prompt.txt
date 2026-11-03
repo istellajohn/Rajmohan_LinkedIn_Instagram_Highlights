@@ -1,0 +1,122 @@
+MASTER BUILD PROMPT  |  VERSION 01  |  03 NOV 2026
+
+You are a senior editorial art director, publication designer, creative technologist and meticulous React engineer working for VALENCE, a Mumbai-based branding and communications agency. Build a complete, working Claude Artifact called “Sreepriya N S | The Editorial Story Room”. This is an internal, interactive Instagram Stories production studio for the public media and writing archive of Sreepriya N S, Co-Founder and CEO of Entrust Family Office. Treat her as a credible practitioner explaining family wealth, governance, succession and continuity, not as a finance influencer.
+
+The intended result is a usable tool, not a moodboard, visual mockup, static portfolio or a stack of hardcoded sample cards. It must turn actual archive records into elegant, editable, exportable 1080 × 1920 Instagram Stories, while keeping editorial accuracy, attribution and usable source links intact. Build the complete application now. Do not spend the response explaining what you would build.
+
+1. SOURCE FILES AND NON-NEGOTIABLE RECORD COUNTS
+
+Use the uploaded Sreepriya_NS_Media_Archive_2010_2026.xlsx as the evidence source, together with the accompanying Sreepriya_Story_Studio_Source_Data.json. The JSON has been extracted from the spreadsheet, including the actual hyperlink destinations hidden behind “Read / watch”, “Publisher” and “Backup” cells. Prefer the JSON for immediate application data import; use the workbook for cross-checking. Do not lose or shorten the URLs.
+
+The working archive contains exactly 147 story-eligible URL records across three disjoint source collections: 78 external media placements (M001 onward), 64 Sreepriya-authored articles published on Entrust Family Office’s website (O001 onward), and 5 video or podcast records (V001 onward). A separate Review sheet, represented by 16 reviewOnly records in the JSON, is excluded from public-facing story creation because authorship or attribution may be wrong or unconfirmed. Never silently include excluded records in the public catalogue or totals. Do not pretend there are verified 2010–2020 Sreepriya-specific press features: the archive’s earliest located external year is 2021.
+
+The archive has date qualification fields, access restrictions, syndicated copies, original/publisher links, backup links, and related record references. Preserve these as metadata. An HTTP 200 response in the source means a server responded; it does not prove paywall-free access, accurate excerpt availability, or an endorsed quotation. An Entrust blog-listing date is not necessarily the article’s original date. Reprints count as distinct URLs, not as independent interviews. Treat these nuances as trust controls, not decorative footnotes.
+
+If attachments are not available inside the Artifact sandbox, design a first-class Import Data control that accepts the supplied JSON and reconstructs the full catalogue client-side. Include a small, clearly labelled demo dataset only as a fallback; never misrepresent a demo as 147 loaded articles. Display an unmistakable data-import state until a real dataset has loaded.
+
+2. EDITORIAL INFORMATION ARCHITECTURE
+
+Create a central library that shows what kind of public evidence each piece actually represents. Use the following navigation. The first three are mutually exclusive collections; the others are curated views and must not be added to the unique-item total.
+
+A. PRESS & PERSPECTIVES: The 78 M-series external placements. Organise these with smaller, precise editorial labels: “By Sreepriya” for credited articles and co-authored contributions; “In Conversation” for publisher interviews and profiles; “Quoted & Consulted” for expert quotes and cited commentary; “Recognition & Appointments” for awards, profiles about appointments and recognition. The original row’s Sreepriya role determines the label. An interview must not be badged “Written by Sreepriya”. A passing quote must not be presented as a feature interview.
+
+B. THE ENTRUST JOURNAL: The 64 O-series company-published articles explicitly attributed to Sreepriya. This collection must be visibly distinct from independent press. Its source label is “Published on Entrust Family Office”, not “Featured in the media”. Allow special sub-series including Family Office Mandate Stories, governance explainers, philanthropy, next-generation readiness, and cross-border decisions, but classify from workbook title/topic only. Never invent client stories or claim a mandate story is a verified client case study.
+
+C. WATCH & LISTEN: The 5 V-series interviews, video appearances and podcasts. Use playable-looking editorial cover designs, but do not claim media can be played inside the app unless an actual supported embed functions. “Watch interview” and “Listen to episode” should open the true source destination. Do not treat two related PowerUp Money URLs as two independently confirmed interviews.
+
+D. RECOGNITION: A curated lens into the actual recognition/appointment records within PRESS & PERSPECTIVES. Do not duplicate those items in underlying data, inflate total coverage, or invent awards.
+
+E. ARCHIVE BY YEAR: An optional chronological reading view with real year clusters and no manufactured historical entries. It should feel like a journal index, not a bar chart or CRM dashboard.
+
+Provide filters for source collection, publication/outlet, year, Sreepriya’s involvement, format, topic and link-access condition. Support keyword search across titles, outlet and topics. Sort newest first or oldest first. Allow favourites and batch selections. Visibly distinguish original coverage from reprints; an optional “hide syndicated copies” toggle should work.
+
+3. EDITORIAL THEMES
+
+Use the actual topic field in each archive record as the canonical topic, and optionally map it to one of these six audience-facing shelves: “Succession & Continuity”; “Family Office Explained”; “Women & Wealth”; “Next Generation”; “Cross-Border Families”; and “Philanthropy & Responsibility”. Show the precise original topic in the item inspector. Avoid forcing a philanthropy article into a wealth investment story just because it is published by Entrust.
+
+Give content prominence through editorial relevance, not superficial ‘trending’ scores. Suggest a 12-to-15-record launch shelf balanced across formats and dates, using verified IDs rather than fabricated stories. Good seeds from the archive include M030 (Professional Wealth Management byline), M041 (Mint byline), M048 (Outlook Business byline), M020 (Indian Startup Times interview), M005 (CEO India Magazine interview), M028 (Femina recognition), M037 (VCCircle appointment), M014 (Entrepreneur India article), M003 (Business Standard quote), O001 (ownership and custodianship), O003 (Vaani Foundation), O004 (family constitution), O029 (family trusts), V001 (Hubbis video) and V005 (PropertyAngel podcast). Treat this as a starter edit, not a claim these are the most important stories by reach.
+
+4. THE CREATIVE DIRECTION: AN EDITORIAL OBJECT, NOT A SOCIAL TEMPLATE
+
+The visual reference point is a contemporary independent magazine crossed with a beautifully printed family archive, a fine-art exhibition guide and a carefully typeset newspaper feature. Elegant but not cold; lived-in but not nostalgic; recognisably premium without being ostentatious. The app interface itself should look like a private editorial studio. Its export designs should look like finished art direction that someone paid attention to, not default Claude application components.
+
+Avoid standard Claude/SaaS aesthetics: no purple-to-blue gradients, no default bento grids, no bubbly rounded rectangles, no pill badges everywhere, no glassmorphism, no stock finance photography, no 3D charts, no fake newspaper clippings, no oversized decorative quotation marks, no generic motivational lines, no loud “AS SEEN IN” walls and no decorative logos that were not uploaded. Do not create twelve designs that are the same centered title placed on differently coloured backgrounds.
+
+Watercolour is a fine supporting material, not the main event. Use atmospheric bleed, natural pigment edges, soft paper textures and restrained ink-wash silhouettes at low opacity. Consider subtle existing Entrust visual motifs like botanical forms, a bird in flight or a lotus only if they are consistent with the uploaded brand kit. The artwork should live in the margins and corners, not reduce title legibility. Use 1-2 painted focal areas per frame, ample unpainted negative space, crisp hairline editorial rules, a purposeful folio/issue number and visually intelligent asymmetry. Prefer original SVG/vector wash masks and scalable vector textures to raster stock imagery. Watercolour should render correctly in exported PNGs, not just in the browser preview.
+
+The brand kit has NOT yet been provided. Do not guess Entrust’s official hex codes, logo proportions, headline typefaces or brand rules. Build a central editable theme system with explicit placeholders: [ENTRUST_LOGO_SVG_OR_PNG], [ENTRUST_PRIMARY_HEX], [ENTRUST_SECONDARY_HEX], [ACCENT_HEX], [PAPER_HEX], [INK_HEX], [EDITORIAL_SERIF], [UTILITY_SANS], [SREEPRIYA_APPROVED_PORTRAIT], [APPROVED_WATERCOLOUR_ARTWORK]. Until assets arrive, use a restrained neutral proof-of-layout theme labelled “Provisional”, not a fabricated Entrust identity. Make switching to final brand values change every layout without rebuilding the app.
+
+Give typography a serious design hierarchy. Start with a literary display serif and a clean but characterful sans-serif, using safe fallback fonts for export; allow exact fonts to be replaced in Brand Kit. Use interesting proportions and deliberate line breaks, not a rigid card component. All content should be readable on a phone. An outlet name is evidence and should be beautifully typeset, not necessarily turned into a fake logo.
+
+5. SIX DIFFERENT STORY ART DIRECTIONS
+
+Implement six genuinely distinct exportable composition families, selected intelligently by record type but always manually overrideable.
+
+01 | THE PRESS LEAF. For major media articles and expert quotations. An editorial masthead at top, publication name, strong headline composition on an offset grid, one fine rule, date/issue notation and a quiet link zone. Artwork is a pale wash bleeding from one side. Distinguish “Quoted in” from “Written for” accurately.
+
+02 | THE BYLINE FOLIO. For external articles actually authored or co-authored by Sreepriya. Typography-led with an oversized initial, generous headline space, byline, outlet credit and narrow column notes. Think printed essay or literary review. No fake pull quote unless the exact quotation has been provided.
+
+03 | THE ENTRUST JOURNAL. For owned O-series writing. More intimate editorial rhythm: small Entrust masthead, strong article title, tiny chapter marker or marginalia, a restrained botanical or watercolor accent, source strip and an intentional link-sticker reservation. The Entrust article must not masquerade as independent media coverage.
+
+04 | THE CONVERSATION. For video interviews, publisher Q&As and podcasts. Split editorial typographic and portrait/image area, with a sharp guest/program/source label and a watch/listen cue. Use an approved portrait or supplied thumbnail only. If absent, make it compelling without inventing a person’s image. No fake play button implying that an unimplemented preview plays.
+
+05 | THE MILESTONE. For appointments and recognition. Avoid trophy graphics, gold foil and self-congratulation. Create a dignified archival announcement where publication, actual recognition and year do the work. It should feel earned and understated.
+
+06 | THE QUIET INDEX. For annual/quarterly collections or a topic-led roundup. Design as an elegant contents page or exhibition wall label with 2-4 real entries, IDs and a clear “Explore the archive” treatment. If the final exported Instagram Story needs one link, choose the destination deliberately; do not imply one sticker opens four different articles.
+
+Within each family, make at least two meaningful compositional variations based on headline length and visual-asset availability. Avoid repeated visual structure across adjacent items in a batch. Use one carefully controlled visual system, not six disconnected brands.
+
+6. STORY PACKS, SAFE ZONES AND EXACT LINK BEHAVIOUR
+
+Export native 1080 × 1920 pixel, 9:16 PNG Stories. Keep all important text within conservative platform-safe boundaries: approximately 250 px from the top and 300 px from the bottom. Allow a visible safe-zone overlay in the editing preview. Reserve a deliberate, visually quiet area for Instagram’s real LINK sticker, typically around the lower-middle to lower-third, without covering the headline or the bottom interface. Permit the sticker reservation to be moved within safe bounds.
+
+Each record can create a ONE-frame story or a THREE-frame editorial sequence:
+- Frame 1, THE HOOK: Real headline or an editor-approved shortening, precise publication cue, strong editorial composition.
+- Frame 2, THE CONTEXT: Optional and empty by default. It may show a verified quote, an editor-supplied excerpt or a factual one-sentence summary only after the editor marks the text approved. Never fabricate a quote, takeaway, statistic, position, private family story or unseen article content based only on the URL or title.
+- Frame 3, THE READ/WATCH FRAME: The actual title, source and date, elegant link zone and a clear action such as “Read the article”, “Read on Entrust” or “Watch the conversation”.
+
+For an article with no verified excerpt, default to a beautiful ONE-frame story, or use frame 2 only as a non-substantive visual detail with no new factual claims. Do not force three frames simply to fill a format. Allow a two-frame pack when that is the strongest edit.
+
+LINK STICKER RULE: Instagram’s native link sticker is added after exporting the PNG, within Instagram. A painted button in a PNG is not a clickable sticker. Provide two export modes: “Placement guide”, which visibly marks [ADD INSTAGRAM LINK STICKER HERE], and “Clean artwork”, which retains appropriate negative space but omits the guide. In the editor, make the primary article URL available with a Copy Link action, and make the preview source label genuinely clickable. If a backup URL exists, show it separately and identify its purpose. Never replace the article’s publisher URL with the Entrust homepage; never create a generic link. Distinguish paywalled/restricted source conditions. If a link is empty or invalid after editing, disable publish-ready status and display “Link required”.
+
+Create an adjacent “Story handoff” panel for each exported item with the record ID, original unedited title, outlet, URL, sticker call-to-action, any manually approved short caption, recommended attribution, and a checkbox for “link pasted into Instagram”. These are production notes, not text that needs to appear on the Story. Include Copy Handoff and Copy Source Link actions.
+
+7. A REAL INTERACTIVE CLAUDE ARTIFACT
+
+Use a working React app and practical browser-compatible code. Desktop layout: left library/filter rail; generous center 9:16 design preview; right inspector/editor; an unobtrusive top navigation to switch Library, Composer, Batch Queue, Brand Kit and Export. On narrow screens stack the controls without shrinking the Story beyond readability. Make the interface tactile like an editorial desk: precise lines, modest animation, quiet panels, excellent typography and restrained accents.
+
+Required working controls: upload and parse supplied JSON; search, filter, sort and select records; choose design family and alternate variation; create 1/2/3-frame packs; edit headline shortening separately from source headline; edit approved teaser and quotes with explicit review state; adjust text scale and line breaks; toggle logo, portrait and watercolor motifs; upload individual image assets; adjust crop/position and wash opacity; select a palette; preview safe zones; manually enter or correct URL; copy link; flag syndicated copy; mark edited/approved/exported status; add to batch queue; navigate actual stories. Persist edits in local browser state when available, plus an “Export project JSON” and “Import project JSON” path so work is not lost when the Artifact is reopened.
+
+The archive data must not be overwritten by design overrides. Separate immutable source record fields from editable presentation fields. Clearly distinguish sourceHeadline from displayHeadline, primaryUrl from overriddenUrl and verifiedExcerpt from editorDraft. Do not silently change the publisher date or source credit to suit layout.
+
+Include a visible record inspector showing: ID, collection, full original title, source outlet, year/date (qualified where needed), actual Sreepriya role, writer/credit, canonical topic, source URL, backup URL if any, access condition, date basis, original notes and related record. Keep internal attribution evidence and research notes out of exported marketing designs unless approved.
+
+8. ENGINEERING AND EXPORT REQUIREMENTS
+
+Make the visual preview and the exported PNG correspond closely. Use either a reliable SVG-based composition engine or an equally robust Canvas renderer. Prefer SVG for typography, rules, bespoke watermark art and deterministic 1080 × 1920 export; use embedded assets with transparent PNG fallback for uploaded logos. On export, account for fonts loading, embedded image data, CORS risks and SVG filter compatibility. Avoid relying on external URLs or remote libraries that are blocked in the Claude Artifact environment. Text should auto-fit within explicit bounding areas and never overlap the link sticker space. Test very short and very long headlines.
+
+Implement a working “Download PNG” control for the current frame and a clear path to export all frames of the chosen pack, using actual file downloads rather than buttons that merely toast success. Use file naming like SNS_M030_PressLeaf_01_20251016.png, where the ID and date come from source data. If ZIP export is unsupported, provide individual PNG downloads instead of claiming a ZIP is ready. Provide “Export story handoff” as a plain-text or JSON download containing source links and approved copy. Do not add a fabricated scheduled posting feature.
+
+Animations can be subtle in the editor but never compromise static story exports. No unnecessary loading screens, fake analytics, broken controls, dummy tabs or generic boilerplate. Work without a backend or external API. Validate URL schemes, escape user-supplied text and avoid unsafe HTML injection. Show honest empty, loading and error states. If only part of the source data is loaded, show the actual count, not 147.
+
+9. BRAND KIT READY FOR MY NEXT UPLOAD
+
+I will subsequently supply Entrust’s official colour palette, logo files, typography references, approved portraits, sample publications and possibly illustration assets. Build a Brand Kit panel with clearly labelled slots and preview swatches. Support SVG and PNG logos with light/dark variants; font-family input with fallbacks; primary, secondary, accent, ink and paper tokens; optional logo-clearspace settings; watercolor opacity; portrait treatment; and optional custom background texture. Preserve every curated story and let a brand update cascade globally. Do not approximate the logo with typed text when a real logo exists. If the kit is absent, display a discreet provisional label only inside the editor, never as a visible logo on finished export.
+
+10. COPY AND CREDIBILITY STANDARDS
+
+Write for Sreepriya as a calm, credible and practical voice on family offices, succession, governance, next-generation transitions, women’s role in family decisions and thoughtful philanthropy. She is operational, not preachy; precise, not abstract; human, not sentimental or performative. Never use loud hype (“game-changing”, “iconic”, “inspiring visionary”), competitive boasting, investment recommendations or unverifiable superlatives. When a story is about an external piece, let the publication and the real title carry authority. Do not write as though she gave an interview when she was merely quoted. Do not imply a publication endorsed Entrust.
+
+Give the editor optional concise teaser suggestions that are tightly grounded in the title and metadata, but label them “Draft, review before publishing”; do not automatically mark them verified. Never manufacture direct speech, confidential clients, personal anecdotes, article conclusions or quantitative claims. Avoid stating the number of verified stories before 2021. If a brand asset is missing, use honest editorial typography instead of inventing a likeness or publisher logo.
+
+11. DEFAULT OPENING EXPERIENCE AND ACCEPTANCE TESTS
+
+On first open, show a memorable but restrained editorial masthead such as “The Editorial Story Room” and a working count strip showing the three true collection counts after the real JSON is loaded. A short line can read: “Published words. Public conversations. A record of work.” Under it, offer an “Editor’s Selection” shelf and the complete, searchable archive. Never lead with fake engagement metrics.
+
+Immediately show one real, editable story built from a loaded record. Provide an actual 9:16 preview, six usable layout choices, editing controls, a functioning source link and a functioning PNG export. The rest of the interface should already work with the full dataset, not need a second implementation pass.
+
+Before declaring the build complete, verify these tests: (1) count exactly 78 M + 64 O + 5 V = 147 real records and 16 excluded review rows; (2) switching collection/filter changes items correctly; (3) owned articles have the Entrust Journal attribution; (4) expert quote and byline stories use different truthful labels; (5) a reprint links back to its related original record when recorded; (6) an editor can change one headline without corrupting source title; (7) real links copy correctly, backups remain separate; (8) “Placement guide” and “Clean artwork” exports differ only as intended; (9) exported files are exactly 1080 × 1920 PNG and render the logo/artwork correctly; (10) a 120-character headline does not clip or cover the link area; (11) the same data survives a project JSON export/import; (12) all 16 review-only entries are absent from the public story list.
+
+When you have produced the Artifact, include a very short operator note explaining how I import the JSON, choose an article, select a story treatment, edit approved text, export PNG and copy the source URL to apply Instagram’s real link sticker. Keep that note outside the artwork itself. Do not substitute explanations, pseudocode or a static mockup for the working Artifact.
+
+START BUILDING THE ARTIFACT NOW. Prioritise a fully operational, visually refined first build over a long written response. Avoid unnecessary questions; all missing brand inputs already have defined placeholders and can be uploaded later.
