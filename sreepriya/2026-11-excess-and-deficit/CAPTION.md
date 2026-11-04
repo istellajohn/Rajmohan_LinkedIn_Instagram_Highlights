@@ -22,11 +22,12 @@ The question on slide 10 that families usually pause on: could you see everythin
 
 ## Alt text (slide 1)
 
-Watercolour illustration of two pencil-drawn circles. The left circle overflows with rose, burgundy and ochre paint; the right is almost empty, with a small pool of blue at the bottom. Text reads: What is your excess, and what is your deficit?
+Two hand-painted brush strokes on pencil ledger lines. A saffron stroke labelled "excess" sweeps far past a vertical line marked "enough"; an indigo stroke labelled "deficit" runs dry before reaching it. Text reads: What is your excess, and what is your deficit?
 
 ## Review flags before posting
 
 - Slide 10 (the six audit questions) and the handwritten notes on slides 3, 4 and 5 are new lines written for this carousel and are not in the LinkedIn post. Sreepriya should approve them.
 - Slide 5's note ("Ask three family members what the family is worth...") is framed as a general observation, not a client story.
-- The portrait is masked with a watercolour edge; colour is only lightly adjusted.
+- The portrait is masked with a dry-brush edge; colour is only lightly adjusted.
+- Visual system: brush strokes on a pencil ledger with an "enough" line. Slide 5 uses a watercolour glaze grid (holdings, one piled high, one empty). Slide 11 returns to the cover ledger with both strokes ending exactly at "enough". No red or burgundy paint is used anywhere; burgundy appears only in type, the header dots and the logo.
 - Exports are 1080 x 1350 (4:5), ready for upload in order 01 to 11.
