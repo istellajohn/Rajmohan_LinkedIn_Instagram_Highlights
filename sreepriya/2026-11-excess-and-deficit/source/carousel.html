@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Excess and Deficit</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --paper:#F8F4ED; --ink:#33242A; --wine:#4F1026; --burg:#600020;
+  --ex:#B36F1F; --exText:#93591A; --indigo:#34507A; --tan:#A87B51; --graphite:#6E6560; --hand:#7A0F2E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#ddd;font-family:"Instrument Sans",sans-serif;color:var(--ink)}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;margin:40px auto;background:var(--paper) url(assets/paper.jpg) center/cover}
+.art{position:absolute;pointer-events:none;mix-blend-mode:multiply}
+svg.pencil{position:absolute;inset:0;width:1080px;height:1350px;pointer-events:none;z-index:2}
+.pad{position:absolute;inset:0;padding:150px 92px 110px}
+.top{position:absolute;top:58px;left:92px;right:92px;display:flex;justify-content:space-between;align-items:center;
+  font-size:19px;letter-spacing:.2em;text-transform:uppercase;color:var(--graphite);font-weight:500;z-index:5}
+.top .who{display:flex;align-items:center;gap:14px}
+.dots{display:inline-flex;gap:5px}.dots i{width:7px;height:7px;border-radius:50%;background:var(--burg);display:block}
+.serif{font-family:"Fraunces",serif;font-variation-settings:"SOFT" 100,"WONK" 0;font-optical-sizing:auto}
+h1,h2{font-family:"Fraunces",serif;font-variation-settings:"SOFT" 100,"WONK" 0;font-weight:420;color:var(--wine);letter-spacing:-.018em}
+h1{font-size:112px;line-height:.98}
+h2{font-size:76px;line-height:1.04}
+em{font-style:italic;font-weight:380}
+.ex{color:var(--ex)} .de{color:var(--indigo)}
+.kick{font-size:21px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--tan);margin-bottom:26px}
+p.body{font-size:35px;line-height:1.42;color:var(--ink)}
+.hand{font-family:"Kalam",cursive;color:var(--hand);font-weight:400;line-height:1.25}
+.abs{position:absolute}
+.z{position:relative;z-index:3}
+ul.list{list-style:none;margin-top:40px}
+ul.list li{font-size:34px;line-height:1.3;padding:18px 0 18px 74px;position:relative;border-top:1.5px solid rgba(110,101,96,.22)}
+ul.list li:last-child{border-bottom:1.5px solid rgba(110,101,96,.22)}
+ul.list li img{position:absolute;left:-4px;top:26px;width:60px;mix-blend-mode:multiply}
+.swipe{position:absolute;right:92px;bottom:70px;display:flex;align-items:center;gap:12px;font-size:20px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--graphite);font-weight:600;z-index:5}
+.enough{position:absolute;font-family:"Kalam",cursive;font-size:30px;color:var(--graphite);transform:rotate(-3deg);z-index:4}
+</style>
+</head>
+<body>
+
+<!-- ============ 01 COVER ============ -->
+<section class="slide" id="s1">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>01 / 11</span></div>
+  <div class="pad">
+    <div class="kick z" style="margin-top:20px">A question I ask business families</div>
+    <h1 class="z">What is your <em class="ex">excess</em>,<br>and what is<br>your <em class="de">deficit</em>?</h1>
+  </div>
+  <div class="hand abs" style="left:96px;top:626px;font-size:40px;color:var(--ex);transform:rotate(-2deg)">excess</div>
+  <img class="art" src="assets/st-excess-blush.png"   style="left:70px;top:704px;width:1000px;opacity:.85">
+  <img class="art" src="assets/st-excess-saffron.png" style="left:78px;top:686px;width:1000px">
+  <div class="hand abs" style="left:96px;top:900px;font-size:40px;color:var(--indigo);transform:rotate(-1.5deg)">deficit</div>
+  <img class="art" src="assets/st-deficit-indigo.png" style="left:78px;top:948px;width:1000px">
+  <div class="enough" style="left:676px;top:604px">enough</div>
+  <svg class="pencil" data-lines='[[92,878,988,876],[92,1152,988,1150],[712,650,708,1168]]'></svg>
+  <div style="position:absolute;left:92px;bottom:60px;z-index:5;display:flex;align-items:center;gap:24px">
+    <img src="assets/logo-crop.png" style="height:92px;mix-blend-mode:multiply;display:block">
+    <span style="width:1.5px;height:64px;background:rgba(110,101,96,.4);display:block"></span>
+    <div>
+      <div style="font-size:24px;font-weight:600;color:var(--wine)">Sreepriya N S</div>
+      <div style="font-size:20px;color:var(--graphite);margin-top:4px">Co-Founder &amp; CEO, Entrust Family Office</div>
+    </div>
+  </div>
+  <div class="swipe" style="bottom:94px">Swipe <svg width="46" height="16" viewBox="0 0 46 16"><path d="M2 8.5c12-1 26-.6 40-.2M34 2c3 2 6 4 9 6.2-3 2-6 4-8.6 6" fill="none" stroke="#6E6560" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+</section>
+
+<!-- ============ 02 PORTRAIT / BELIEF ============ -->
+<section class="slide" id="s2">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>02 / 11</span></div>
+  <img class="art" src="assets/sweep-sap.png" style="left:470px;top:600px;width:640px;opacity:.55">
+  <img class="art" src="assets/sweep-sand.png" style="left:420px;top:1010px;width:720px;opacity:.85">
+  <img class="abs" src="assets/portrait.png" style="left:548px;top:470px;width:520px;z-index:2">
+  <div class="pad">
+    <h2 class="z">How much a family owns tells me <em style="color:var(--burg)">less than you'd think.</em></h2>
+    <p class="body z" style="margin-top:48px;width:430px">After years of working closely with business families, I have come to believe that good stewardship depends on how well a family's assets, responsibilities and aspirations are managed.</p>
+    <p class="body z" style="margin-top:28px;width:420px;color:var(--wine);font-weight:600">The size of the number matters less.</p>
+  </div>
+  <div class="hand abs" style="left:92px;bottom:96px;font-size:44px;transform:rotate(-2deg)">Sreepriya</div>
+  <div class="abs" style="left:94px;bottom:66px;font-size:19px;color:var(--graphite);letter-spacing:.04em">Co-Founder &amp; CEO, Entrust Family Office</div>
+</section>
+
+<!-- ============ 03 EXCESS ============ -->
+<section class="slide" id="s3">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>03 / 11</span></div>
+  <div class="pad">
+    <div class="kick z" style="color:var(--ex)">Every family carries some excess</div>
+    <h2 class="z">Excess is what runs<br>past <em class="ex">enough.</em></h2>
+    <ul class="list z">
+      <li><img src="assets/dab-saffron.png">Too much wealth concentrated in one asset or one business</li>
+      <li><img src="assets/dab-saffron.png">Founders still involved in every day-to-day decision</li>
+      <li><img src="assets/dab-saffron.png">Inherited properties held on to out of attachment</li>
+      <li><img src="assets/dab-saffron.png">Plenty of opportunities, and no clear order of priority</li>
+    </ul>
+  </div>
+  <img class="art" src="assets/st-excess-blush.png"   style="left:70px;top:946px;width:1000px;opacity:.85">
+  <img class="art" src="assets/st-excess-saffron.png" style="left:78px;top:928px;width:1000px">
+  <div class="enough" style="left:676px;top:878px">enough</div>
+  <svg class="pencil" data-lines='[[712,918,708,1150],[92,1130,988,1128]]'></svg>
+  <div class="hand abs" style="left:92px;top:1158px;width:880px;font-size:38px;transform:rotate(-1deg)">Excess usually feels like strength. That is exactly why it goes unexamined.</div>
+</section>
+
+<!-- ============ 04 DEFICIT ============ -->
+<section class="slide" id="s4">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>04 / 11</span></div>
+  <div class="pad">
+    <div class="kick z" style="color:var(--indigo)">And some deficit</div>
+    <h2 class="z">Deficit is where the<br>brush <em class="de">runs dry.</em></h2>
+    <ul class="list z" style="margin-top:32px">
+      <li><img src="assets/dab-indigo.png">Financial information scattered across people, files and advisers</li>
+      <li><img src="assets/dab-indigo.png">A succession plan that keeps moving to "later"</li>
+      <li><img src="assets/dab-indigo.png">Governance gaps: nobody is sure who decides what</li>
+      <li><img src="assets/dab-indigo.png">Little independent, professional oversight</li>
+      <li><img src="assets/dab-indigo.png">A next generation educated, but not yet prepared</li>
+    </ul>
+  </div>
+  <img class="art" src="assets/st-deficit-indigo.png" style="left:78px;top:930px;width:1000px">
+  <div class="enough" style="left:676px;top:880px">enough</div>
+  <svg class="pencil" data-lines='[[712,918,708,1120],[92,1100,988,1098]]'></svg>
+  <div class="hand abs" style="left:92px;top:1130px;width:880px;font-size:36px;color:var(--indigo);transform:rotate(-1deg)">Deficits are quiet. Nobody notices until someone needs an answer quickly.</div>
+  <style>#s4 ul.list li{font-size:33px;padding:15px 0 15px 74px}#s4 ul.list li img{top:22px}</style>
+</section>
+
+<!-- ============ 05 BOTH (GLAZE GRID) ============ -->
+<section class="slide" id="s5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>05 / 11</span></div>
+  <div class="pad">
+    <h2 class="z">Most families carry <em style="color:var(--burg)">both at once.</em></h2>
+  </div>
+  <!-- holdings grid: one cell piled high, one cell empty -->
+  <img class="art" src="assets/gl-ex-5.png" style="left:70px;top:350px;width:190px;height:190px">
+  <img class="art" src="assets/gl-ex-1.png" style="left:96px;top:368px;width:300px;height:160px">
+  <img class="art" src="assets/gl-ex-3.png" style="left:206px;top:344px;width:190px;height:190px">
+  <img class="art" src="assets/gl-ex-2.png" style="left:74px;top:410px;width:270px;height:136px">
+  <img class="art" src="assets/gl-ex-4.png" style="left:160px;top:420px;width:240px;height:130px">
+  <img class="art" src="assets/gl-0.png" style="left:383px;top:372px;width:313px;height:150px">
+  <img class="art" src="assets/gl-1.png" style="left:688px;top:372px;width:313px;height:150px">
+  <img class="art" src="assets/gl-2.png" style="left:78px;top:526px;width:313px;height:150px">
+  <img class="art" src="assets/gl-3.png" style="left:383px;top:526px;width:313px;height:150px">
+  <img class="art" src="assets/gl-4.png" style="left:688px;top:526px;width:313px;height:150px">
+  <img class="art" src="assets/gl-5.png" style="left:78px;top:680px;width:313px;height:150px">
+  <img class="art" src="assets/gl-6.png" style="left:383px;top:680px;width:313px;height:150px">
+  <svg class="pencil" data-dash='[[704,694,985,816]]'></svg>
+  <div class="hand abs" style="left:786px;top:726px;font-size:40px;color:var(--indigo);transform:rotate(-2deg)">deficit</div>
+  <div class="hand abs" style="left:436px;top:316px;font-size:36px;color:var(--ex);transform:rotate(-3deg)">excess</div>
+  <svg class="abs" style="left:392px;top:340px;z-index:4" width="50" height="40" viewBox="0 0 50 40"><path d="M46 8C32 7 20 13 10 30M6 18c1 4 2 9 3 13 4-1 9-3 12-4" fill="none" stroke="#B36F1F" stroke-width="2.4" stroke-linecap="round"/></svg>
+
+  <div class="pairs abs">
+    <div class="pair"><span class="a">Significant wealth.</span><span class="b">Very little liquidity.</span></div>
+    <div class="pair"><span class="a">Several businesses and properties.</span><span class="b">No single view of what is owned and owed.</span></div>
+    <div class="pair"><span class="a">Accomplished entrepreneurs.</span><span class="b">No framework to carry wealth across generations.</span></div>
+  </div>
+  <div class="hand abs" style="left:92px;bottom:70px;width:880px;font-size:35px;transform:rotate(-1deg)">Ask three family members what the family is worth. You may hear three different numbers.</div>
+  <style>
+    #s5 .pairs{left:92px;right:92px;top:872px}
+    #s5 .pair{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:18px 0;border-top:1.5px solid rgba(110,101,96,.22)}
+    #s5 .pair:last-child{border-bottom:1.5px solid rgba(110,101,96,.22)}
+    #s5 .pair span{font-family:"Fraunces",serif;font-variation-settings:"SOFT" 100;font-size:34px;line-height:1.16}
+    #s5 .a{color:var(--exText);font-weight:500}
+    #s5 .b{color:var(--indigo);font-style:italic;font-weight:400}
+  </style>
+</section>
+
+<!-- ============ 06 THE OBVIOUS ANSWER ============ -->
+<section class="slide" id="s6">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>06 / 11</span></div>
+  <div class="pad">
+    <div class="kick z">The obvious answer</div>
+    <h2 class="z" style="font-size:66px">So, does every wealthy family need its own Single Family Office?</h2>
+    <div style="position:relative;margin-top:50px">
+      <img class="art" src="assets/hl-sand.png" style="left:-20px;top:30px;width:560px">
+      <img class="art" src="assets/hl-saffron.png" style="left:-20px;top:140px;width:780px">
+      <div class="serif z" style="font-size:108px;line-height:1.02;font-style:italic;font-weight:380;color:var(--burg);letter-spacing:-.02em">For many,<br>I don't think so.</div>
+    </div>
+    <p class="body z" style="margin-top:50px">Building one takes experienced professionals, technology, research, compliance, reporting and governance. It also takes a great deal of the family's own time to supervise.</p>
+    <p class="z serif" style="margin-top:40px;font-size:44px;line-height:1.2;color:var(--wine);font-weight:450">You set out to simplify life, and end up running one more organisation.</p>
+  </div>
+</section>
+
+<!-- ============ 07 WHAT AN MFO GIVES ============ -->
+<section class="slide" id="s7">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>07 / 11</span></div>
+  <div class="pad">
+    <div class="kick z">A well-structured Multi Family Office</div>
+    <h2 class="z" style="font-size:64px">The discipline of a dedicated office, <em style="color:var(--burg)">without carrying the full cost alone.</em></h2>
+    <div class="grid z">
+      <div class="it"><div class="sw"><img src="assets/dab-saffron.png"><b>01</b></div><div><h3>Multidisciplinary expertise</h3><p>Investment advisory, succession planning, tax coordination, family CFO services and governance.</p></div></div>
+      <div class="it"><div class="sw"><img src="assets/dab-teal.png"><b>02</b></div><div><h3>Institutional strength, shared cost</h3><p>Professionals, research, technology and reporting.</p></div></div>
+      <div class="it"><div class="sw"><img src="assets/dab-sap.png"><b>03</b></div><div><h3>Independent oversight</h3><p>One consolidated view across investments, businesses, real estate, trusts and liabilities.</p></div></div>
+      <div class="it"><div class="sw"><img src="assets/dab-sky.png"><b>04</b></div><div><h3>Continuity</h3><p>Frameworks that reduce dependence on any one family member.</p></div></div>
+      <div class="it"><div class="sw"><img src="assets/dab-mauve.png"><b>05</b></div><div><h3>Personalisation</h3><p>Without having to hire and manage a team.</p></div></div>
+    </div>
+  </div>
+  <style>
+    #s7 .grid{margin-top:46px}
+    #s7 .it{display:grid;grid-template-columns:110px 1fr;gap:22px;align-items:start;padding:20px 0;border-top:1.5px solid rgba(110,101,96,.22)}
+    #s7 .it:last-child{border-bottom:1.5px solid rgba(110,101,96,.22)}
+    #s7 .sw{position:relative;width:110px;height:56px;margin-top:2px}
+    #s7 .sw img{position:absolute;left:-6px;top:-2px;width:122px;mix-blend-mode:multiply}
+    #s7 .sw b{position:absolute;inset:0;display:grid;place-items:center;font-family:"Fraunces",serif;font-size:30px;font-weight:500;color:var(--wine);font-variation-settings:"SOFT" 100}
+    #s7 h3{font-size:31px;font-weight:650;color:var(--wine);letter-spacing:-.005em;line-height:1.2}
+    #s7 p{font-size:28px;line-height:1.36;margin-top:4px;color:var(--ink)}
+  </style>
+</section>
+
+<!-- ============ 08 TO BE FAIR ============ -->
+<section class="slide" id="s8">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>08 / 11</span></div>
+  <img class="art" src="assets/band-blush.png" style="left:-60px;top:660px;width:1220px;opacity:.9">
+  <img class="art" src="assets/band-sand.png" style="left:-30px;top:880px;width:1180px;opacity:.75">
+  <div class="pad">
+    <div class="kick z">To be fair</div>
+    <h2 class="z" style="font-size:68px">For families with highly complex structures or scale, a Single Family Office may still be right.</h2>
+    <p class="z hand" style="margin-top:40px;font-size:40px;transform:rotate(-1deg)">But here is the test I would apply either way.</p>
+    <div class="serif z" style="margin-top:130px;font-size:62px;line-height:1.16;color:var(--wine);font-weight:420;letter-spacing:-.012em">Measure sophistication by the quality of <em style="color:var(--burg)">advice, governance, execution and outcomes,</em> not by the size of the infrastructure.</div>
+  </div>
+</section>
+
+<!-- ============ 09 CONTROL ============ -->
+<section class="slide" id="s9">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>09 / 11</span></div>
+  <div class="pad">
+    <h2 class="z" style="font-size:70px">A family office should never take control <em style="color:var(--burg)">away</em> from the family.</h2>
+  </div>
+  <div class="abs" style="left:190px;top:560px;width:700px;height:470px;overflow:hidden">
+    <img class="art" src="assets/long-saffron.png" style="left:-180px;top:10px;width:1100px">
+    <img class="art" src="assets/long-teal.png" style="left:-120px;top:118px;width:1100px">
+    <img class="art" src="assets/long-sap.png" style="left:-220px;top:226px;width:1100px">
+    <img class="art" src="assets/long-indigo.png" style="left:-150px;top:334px;width:1100px">
+  </div>
+  <svg class="pencil" data-lines='[[190,536,192,1056],[890,538,888,1054]]'></svg>
+  <div class="hand abs" style="left:0;right:0;top:1066px;text-align:center;font-size:36px;transform:rotate(-1.5deg)">The line holds the colour. It doesn't drain it.</div>
+  <p class="body abs" style="left:92px;right:92px;bottom:96px;font-size:37px;z-index:3">Its job is to help the family exercise that control with <b style="color:var(--wine)">clarity, confidence and continuity.</b></p>
+</section>
+
+<!-- ============ 10 THE AUDIT ============ -->
+<section class="slide" id="s10">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>10 / 11</span></div>
+  <div class="pad">
+    <div class="kick z">Save this for your next family meeting</div>
+    <h2 class="z" style="font-size:72px">The two-column audit</h2>
+    <p class="body z" style="font-size:31px;margin-top:18px;color:var(--graphite)">Answer honestly, together. The disagreements are the useful part.</p>
+    <div class="cols z">
+      <div class="col">
+        <div class="hd"><img class="art" src="assets/hd-saffron.png" style="left:-24px;top:-30px;width:440px"><span>Our excess</span></div>
+        <div class="q">Where is too much of our wealth concentrated?</div>
+        <div class="q">Which decisions still cannot happen without one person?</div>
+        <div class="q">What are we holding on to out of habit or sentiment?</div>
+      </div>
+      <div class="col">
+        <div class="hd"><img class="art" src="assets/hd-indigo.png" style="left:-24px;top:-30px;width:440px"><span>Our deficit</span></div>
+        <div class="q">Could we see everything we own and owe on one page today?</div>
+        <div class="q">If our key decision-maker were unavailable tomorrow, who steps in?</div>
+        <div class="q">Does the next generation know how decisions are actually made?</div>
+      </div>
+    </div>
+  </div>
+  <style>
+    #s10 .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:60px}
+    #s10 .hd{position:relative;height:66px;margin-bottom:12px}
+    #s10 .hd span{position:relative;font-family:"Fraunces",serif;font-variation-settings:"SOFT" 100;font-size:42px;font-style:italic;color:var(--wine);font-weight:450}
+    #s10 .q{font-size:29px;line-height:1.34;padding:22px 0 64px;position:relative;color:var(--ink)}
+    #s10 .q::after{content:"";position:absolute;left:0;right:0;bottom:22px;height:2px;
+      background:repeating-linear-gradient(90deg,rgba(110,101,96,.45) 0 9px,transparent 9px 16px)}
+  </style>
+</section>
+
+<!-- ============ 11 CLOSE / CTA ============ -->
+<section class="slide" id="s11">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>11 / 11</span></div>
+  <div class="pad">
+    <div class="serif z" style="font-size:34px;line-height:1.32;color:var(--graphite);font-weight:380;width:860px">Preserving wealth takes discipline. Growing it takes foresight. Sustaining it across generations takes structure, and the right partnerships.</div>
+    <h2 class="z" style="font-size:70px;margin-top:40px">The objective is not to build a large family office. <em style="color:var(--burg)">It is to build a lasting family legacy.</em></h2>
+  </div>
+  <!-- the cover's ledger, resolved: both strokes meet enough -->
+  <div class="abs" style="left:78px;top:742px;width:634px;height:250px;overflow:hidden">
+    <img class="art" src="assets/long-blush.png" style="left:-4px;top:4px;width:1000px;opacity:.85">
+    <img class="art" src="assets/long-saffron.png" style="left:0;top:0;width:1000px">
+    <img class="art" src="assets/long-indigo.png" style="left:0;top:122px;width:1000px">
+  </div>
+  <div class="enough" style="left:676px;top:700px">enough</div>
+  <svg class="pencil" data-lines='[[712,738,708,1004],[92,996,988,994]]'></svg>
+  <div class="cta abs">
+    <div><svg width="32" height="32" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z" fill="none" stroke="#4F1026" stroke-width="1.6" stroke-linejoin="round"/></svg><span><b>Save</b> it for your next family meeting</span></div>
+    <div><svg width="32" height="32" viewBox="0 0 24 24"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z" fill="none" stroke="#4F1026" stroke-width="1.6" stroke-linejoin="round"/></svg><span><b>Send</b> it to the person in your family who holds all the paperwork</span></div>
+  </div>
+  <div class="site abs" style="display:flex;align-items:center;gap:28px">
+    <img src="assets/logo-crop.png" style="height:118px;mix-blend-mode:multiply;display:block">
+    <span style="width:1.5px;height:84px;background:rgba(110,101,96,.4);display:block"></span>
+    <div>
+      <div class="lbl">Begin the conversation</div>
+      <div class="url">www.entrustfamilyoffice.com</div>
+    </div>
+  </div>
+  <style>
+    #s11 .cta{left:92px;right:92px;top:1028px;display:grid;gap:14px}
+    #s11 .cta div{display:flex;gap:18px;align-items:center;font-size:28px;color:var(--ink)}
+    #s11 .cta b{color:var(--wine);font-weight:650}
+    #s11 .site{left:92px;bottom:62px}
+    #s11 .lbl{font-size:19px;letter-spacing:.2em;text-transform:uppercase;color:var(--tan);font-weight:600}
+    #s11 .url{font-size:42px;color:var(--wine);font-weight:600;margin-top:8px;border-bottom:2px solid rgba(168,123,81,.6);padding-bottom:6px;display:inline-block}
+  </style>
+</section>
+
+<script>
+function rng(seed){let s=seed>>>0;return()=>{s=(s*1664525+1013904223)>>>0;return s/4294967296}}
+function roughLine(x1,y1,x2,y2,R){
+  const n=Math.max(6,Math.round(Math.hypot(x2-x1,y2-y1)/40));let d='';const bow=(R()-.5)*3;
+  for(let i=0;i<=n;i++){const t=i/n;const b=Math.sin(t*Math.PI)*bow;const nx=-(y2-y1),ny=(x2-x1),L=Math.hypot(nx,ny)||1;
+    const x=x1+(x2-x1)*t+nx/L*(b+(R()-.5)*.9), y=y1+(y2-y1)*t+ny/L*(b+(R()-.5)*.9);d+=(i?' L':'M')+x.toFixed(1)+' '+y.toFixed(1)}
+  return d;
+}
+const ns='http://www.w3.org/2000/svg';
+document.querySelectorAll('svg.pencil').forEach((svg,k)=>{
+  svg.setAttribute('viewBox','0 0 1080 1350');
+  const f=document.createElementNS(ns,'filter');f.id='pg'+k;
+  f.innerHTML='<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="'+k+'"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.25"/><feComposite in="SourceGraphic" operator="in"/>';
+  svg.appendChild(f);const R=rng(97+k*31);
+  const draw=(d,w,op)=>{const p=document.createElementNS(ns,'path');p.setAttribute('d',d);p.setAttribute('fill','none');
+    p.setAttribute('stroke','#5f5752');p.setAttribute('stroke-width',w);p.setAttribute('stroke-linecap','round');
+    p.setAttribute('opacity',op);p.setAttribute('filter',`url(#pg${k})`);svg.appendChild(p)};
+  if(svg.dataset.lines) JSON.parse(svg.dataset.lines).forEach(([a,b,c,d])=>{draw(roughLine(a,b,c,d,R),2.4,.75);draw(roughLine(a+2,b+1,c-3,d+1,R),1.4,.45)});
+  if(svg.dataset.dash) JSON.parse(svg.dataset.dash).forEach(([x1,y1,x2,y2])=>{
+    [[x1,y1,x2,y1],[x2,y1,x2,y2],[x2,y2,x1,y2],[x1,y2,x1,y1]].forEach(([a,b,c,d])=>{
+      const L=Math.hypot(c-a,d-b),seg=16,gap=11;
+      for(let s=0;s<L;s+=seg+gap){const t1=s/L,t2=Math.min(1,(s+seg)/L);draw(roughLine(a+(c-a)*t1,b+(d-b)*t1,a+(c-a)*t2,b+(d-b)*t2,R),2.2,.7)}})});
+});
+</script>
+</body>
+</html>
