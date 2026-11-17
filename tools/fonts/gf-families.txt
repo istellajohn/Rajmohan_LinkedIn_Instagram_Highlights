@@ -1,0 +1,77 @@
+Fraunces
+Newsreader
+Instrument Serif
+Instrument Sans
+Playfair Display
+DM Serif Display
+DM Serif Text
+DM Sans
+Libre Caslon Text
+Libre Caslon Display
+Bodoni Moda
+Cormorant Garamond
+EB Garamond
+Spectral
+Young Serif
+Gloock
+Source Serif 4
+Petrona
+Literata
+Piazzolla
+Brygada 1918
+Besley
+Hedvig Letters Serif
+Noto Serif Display
+Gelasio
+Libre Bodoni
+Bricolage Grotesque
+Hanken Grotesk
+Schibsted Grotesk
+Onest
+Figtree
+Plus Jakarta Sans
+Outfit
+Sora
+Syne
+Space Grotesk
+Unbounded
+Familjen Grotesk
+Albert Sans
+Red Hat Display
+Red Hat Text
+Epilogue
+Archivo
+Inter Tight
+Manrope
+Urbanist
+Lexend
+Mona Sans
+Hubot Sans
+Geologica
+Golos Text
+Wix Madefor Display
+Wix Madefor Text
+Rethink Sans
+Funnel Display
+Funnel Sans
+Host Grotesk
+Afacad
+Anybody
+Big Shoulders Display
+Darker Grotesque
+Public Sans
+Work Sans
+IBM Plex Sans
+IBM Plex Serif
+IBM Plex Mono
+Space Mono
+DM Mono
+Martian Mono
+Fragment Mono
+Mukta
+Hind
+Tiro Devanagari Hindi
+Yatra One
+Baloo 2
+Anek Latin
+Kalam

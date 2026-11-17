@@ -1,0 +1,45 @@
+@font-face{font-family:'Gambetta';src:url(Gambetta-Bold.woff2) format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-BoldItalic.woff2) format('woff2');font-weight:700;font-style:italic;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-Italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-Light.woff2) format('woff2');font-weight:300;font-style:normal;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-LightItalic.woff2) format('woff2');font-weight:300;font-style:italic;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-Medium.woff2) format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-MediumItalic.woff2) format('woff2');font-weight:500;font-style:italic;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-Regular.woff2) format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-Semibold.woff2) format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'Gambetta';src:url(Gambetta-SemiboldItalic.woff2) format('woff2');font-weight:600;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-Black.woff2) format('woff2');font-weight:900;font-style:normal;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-BlackItalic.woff2) format('woff2');font-weight:900;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-Bold.woff2) format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-BoldItalic.woff2) format('woff2');font-weight:700;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-ExtraBoldItalic.woff2) format('woff2');font-weight:800;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-ExtraLightItalic.woff2) format('woff2');font-weight:200;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-Italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-Light.woff2) format('woff2');font-weight:300;font-style:normal;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-LightItalic.woff2) format('woff2');font-weight:300;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-Medium.woff2) format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-MediumItalic.woff2) format('woff2');font-weight:500;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-Regular.woff2) format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-SemiBold.woff2) format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-SemiBoldItalic.woff2) format('woff2');font-weight:600;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-Thin.woff2) format('woff2');font-weight:100;font-style:normal;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-ThinItalic.woff2) format('woff2');font-weight:100;font-style:italic;font-display:block}
+@font-face{font-family:'Geist Mono';src:url(GeistMono-UltraLight.woff2) format('woff2');font-weight:200;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Black.woff2) format('woff2');font-weight:900;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-BlackItalic.woff2) format('woff2');font-weight:900;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Bold.woff2) format('woff2');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-BoldItalic.woff2) format('woff2');font-weight:700;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Extrabold.woff2) format('woff2');font-weight:800;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-ExtraboldItalic.woff2) format('woff2');font-weight:800;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Extralight.woff2) format('woff2');font-weight:200;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-ExtralightItalic.woff2) format('woff2');font-weight:200;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Light.woff2) format('woff2');font-weight:300;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-LightItalic.woff2) format('woff2');font-weight:300;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Medium.woff2) format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-MediumItalic.woff2) format('woff2');font-weight:500;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Regular.woff2) format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Semibold.woff2) format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-SemiboldItalic.woff2) format('woff2');font-weight:600;font-style:italic;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-Thin.woff2) format('woff2');font-weight:100;font-style:normal;font-display:block}
+@font-face{font-family:'Switzer';src:url(Switzer-ThinItalic.woff2) format('woff2');font-weight:100;font-style:italic;font-display:block}
