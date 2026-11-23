@@ -32,8 +32,8 @@ Order A or B? There is no wrong answer here. Knowing which one you are on is the
 12. If coming home is in your next few years, think it through long before the flight is booked. Save, send, read Ghar Wapasi 2.0.
 
 ## Fact notes
-- RNOR tests: unchanged in the Income-tax Act, 2025 (section 6(13), similar to section 6(6) of the 1961 Act), applying to tax years from 1 April 2026. Per the Income Tax Department's official FAQ and portal.
-- "Up to two or three tax years" is the typical range for long-time NRIs; the exact period depends on each person's history and dates. Phrased as "often".
+- RNOR tests: unchanged in the Income-tax Act, 2025 (section 6(13), similar to section 6(6) of the 1961 Act), applying to tax years from 1 April 2026. Verified directly against the Income Tax Department's Non Resident FAQ on incometax.gov.in (FAQ 5), which also confirms the 182-day and 60/365-day residency tests are unchanged, and that the look-back years can include years under the 1961 Act.
+- "Up to two or three tax years": for a long-time NRI, the 9-of-10 test usually gives two RNOR years after return; a third is possible when arrival timing keeps total days in India over the previous seven years at 729 or fewer. Phrased as "often" and "depends on your history and travel dates". This is my reading of the rules, not stated on the portal; have the tax lead confirm.
 - Status summaries on slide 7 are simplified ("broadly", "generally", "with some exceptions") and carry a not-tax-advice line.
 - US citizens are taxed on worldwide income wherever they live (US citizenship-based taxation).
 - Business Insider essay: by Balaji Gururajan, as told to Faye Bradley (November 2026). 18 years in the US (Microsoft, LinkedIn, Meta), US citizen, now back in Bengaluru. The slides do not name him, matching Sreepriya's post.
