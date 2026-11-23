@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Enough to Decide</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --ink:#24372C; --ink2:#4A5A4E; --terra:#B4572F; --terra2:#C9774E; --burg:#600020;
+  --sky:#F2E2D2; --cream:#FBF6EE; --sage:#7E9779;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000}
+#strip{position:relative;width:10800px;height:1350px;overflow:hidden;font-family:"Switzer",sans-serif;color:var(--ink)}
+.s{position:absolute;top:0;width:1080px;height:1350px;overflow:hidden;
+   background:linear-gradient(180deg,#F1DCC9 0%,#F6E8DA 34%,#FAF4EB 70%,#FBF6EE 100%)}
+.paper{position:absolute;inset:0;background:url(assets/paper.jpg);mix-blend-mode:multiply;opacity:.55}
+.a{position:absolute}
+.top{position:absolute;top:60px;left:92px;right:92px;display:flex;justify-content:space-between;align-items:center;z-index:10;
+  font-size:18px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);font-weight:500}
+.top .who{display:flex;align-items:center;gap:14px}
+.dots{display:inline-flex;gap:5px}.dots i{width:7px;height:7px;border-radius:50%;background:var(--burg);display:block}
+.lbl{font-size:20px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--terra)}
+.h{font-family:"Switzer",sans-serif;font-weight:300;letter-spacing:-.035em;color:var(--ink)}
+.it{font-family:"Gambetta",serif;font-style:italic;font-weight:300;letter-spacing:-.01em;color:var(--terra)}
+.body{font-size:34px;line-height:1.45;color:var(--ink2);font-weight:400}
+.mist{position:absolute;left:0;top:0;width:1080px;height:760px;background:url(assets/mist.png) 0 0/1080px 760px no-repeat;z-index:4;pointer-events:none}
+.z{z-index:6}
+.rule{height:1.5px;background:rgba(36,55,44,.18)}
+</style>
+</head>
+<body>
+<div id="strip">
+
+<!-- terrain under everything, one continuous map -->
+<script>
+for(let i=0;i<10;i++){document.write(`<section class="s" id="s${i+1}" style="left:${i*1080}px"><div class="paper"></div><img class="a" src="assets/contours.png" style="left:${-i*1080}px;top:0;width:10800px;height:1350px;opacity:.6"></section>`)}
+</script>
+
+<!-- ================= 01 COVER ================= -->
+<div class="a" style="left:0;top:0;width:1080px;height:1350px">
+  <div class="mist" style="opacity:.95"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>01 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:182px;width:360px;line-height:1.5">On deciding without perfect information</div>
+  <svg class="a z" style="left:92px;top:300px" width="60" height="86" viewBox="0 0 60 86"><path d="M30 6 L44 60 L30 50 L16 60 Z" fill="none" stroke="#24372C" stroke-width="1.6" stroke-linejoin="round"/><path d="M30 6 L30 50 L16 60 Z" fill="#B4572F" opacity=".85"/><text x="30" y="82" text-anchor="middle" font-family="Switzer" font-size="16" letter-spacing="2" fill="#24372C">N</text></svg>
+  <div class="a z print" style="left:560px;top:126px;transform:rotate(3deg)">
+    <img src="assets/photo-print.jpg" style="width:390px;display:block">
+    <div class="cap">On the trail</div>
+  </div>
+  <div class="a z h" style="left:92px;right:92px;top:806px;font-size:92px;line-height:1">We will rarely have <span class="it">100% certainty.</span></div>
+  <div class="a z h" style="left:92px;right:92px;top:1010px;font-size:46px;line-height:1.15;color:var(--ink2)">Leadership still asks us to decide.</div>
+  <div class="a z" style="left:92px;bottom:56px;display:flex;align-items:center;gap:22px">
+    <img src="assets/logo.png" style="height:80px;display:block">
+    <span style="width:1.5px;height:56px;background:rgba(36,55,44,.3);display:block"></span>
+    <div><div style="font-size:22px;font-weight:600">Sreepriya N S</div><div style="font-size:18px;color:var(--ink2);margin-top:3px">Co-Founder &amp; CEO, Entrust Family Office</div></div>
+  </div>
+  <div class="a z" style="right:92px;bottom:80px;font-size:18px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink2);display:flex;gap:12px;align-items:center">Swipe
+    <svg width="44" height="14" viewBox="0 0 44 14"><path d="M1 7h40M34 1l7 6-7 6" fill="none" stroke="#B4572F" stroke-width="2"/></svg></div>
+</div>
+
+<!-- ================= 02 ROOSEVELT ================= -->
+<div class="a" style="left:1080px;top:0;width:1080px;height:1350px">
+  <div class="a" style="left:180px;top:-260px;width:900px;height:900px;background:radial-gradient(closest-side,rgba(244,190,140,.55),rgba(244,190,140,0));z-index:3"></div>
+  <div class="mist" style="opacity:.85"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>02 / 10</span></div>
+  <div class="a z" style="left:84px;top:250px;font-family:Gambetta;font-size:260px;line-height:.8;color:var(--terra);opacity:.9">&ldquo;</div>
+  <div class="a z it" style="left:92px;right:92px;top:440px;font-size:84px;line-height:1.08;color:var(--ink)">Far better it is to dare mighty things&hellip; even though checkered by failure&hellip;</div>
+  <div class="a z rule" style="left:92px;width:120px;top:900px;background:var(--terra)"></div>
+  <div class="a z" style="left:92px;top:930px;font-size:28px;font-weight:600;color:var(--ink)">Theodore Roosevelt</div>
+  <div class="a z" style="left:92px;top:972px;font-size:24px;color:var(--ink2)">&ldquo;The Strenuous Life&rdquo;, 1899</div>
+</div>
+
+<!-- ================= 03 THINKING DEEPLY ================= -->
+<div class="a" style="left:2160px;top:0;width:1080px;height:1350px">
+  <div class="mist" style="opacity:.8"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>03 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:182px">First, the wisdom</div>
+  <div class="a z h" style="left:92px;right:92px;top:232px;font-size:96px;line-height:1">There is wisdom in <span class="it">thinking deeply.</span></div>
+  <div class="a z body" style="left:92px;right:120px;top:500px">Reading, researching, questioning assumptions and considering different possibilities.</div>
+  <div class="a z" style="left:92px;right:92px;top:860px;padding:44px 50px;background:rgba(251,246,238,.78);border-left:4px solid var(--terra)">
+    <div class="h" style="font-size:54px;line-height:1.12">Good leadership should never confuse speed with <span class="it">judgement.</span></div>
+  </div>
+</div>
+
+<!-- ================= 04 ANALYSIS PARALYSIS ================= -->
+<div class="a" style="left:3240px;top:0;width:1080px;height:1350px">
+  <img class="a" src="assets/dense.png" style="left:0;top:650px;width:1080px;height:700px;z-index:3;-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent 100%);mask-image:radial-gradient(closest-side,#000 55%,transparent 100%)">
+  <div class="mist" style="opacity:1"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>04 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:182px">But there comes a point</div>
+  <div class="a z h" style="left:92px;right:92px;top:232px;font-size:88px;line-height:1.02">where more analysis does not create <span class="it">more clarity.</span></div>
+  <div class="a z body" style="left:92px;right:120px;top:600px;font-size:38px;color:var(--ink)">Instead, it tips into analysis paralysis.</div>
+  <div class="a z" style="right:92px;bottom:80px;font-size:18px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink2)">More lines. Not more clarity.</div>
+</div>
+
+<!-- ================= 05 KNOWING ENOUGH ================= -->
+<div class="a" style="left:4320px;top:0;width:1080px;height:1350px">
+  <div class="a" style="left:-200px;top:300px;width:1400px;height:1100px;background:radial-gradient(closest-side,rgba(244,190,140,.45),rgba(244,190,140,0));z-index:3"></div>
+  <div class="mist" style="opacity:.6"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>05 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:330px">What leadership is</div>
+  <div class="a z h" style="left:92px;right:92px;top:384px;font-size:94px;line-height:1.04">Knowing when we have understood <span class="it">enough</span> to make a responsible decision, and then having the courage to act.</div>
+</div>
+
+<!-- ================= 06 TWO PATHS ================= -->
+<div class="a" style="left:5400px;top:0;width:1080px;height:1350px">
+  <div class="mist" style="opacity:.5"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>06 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:182px">Two temperaments</div>
+  <svg class="a z" style="left:0;top:0" width="1080" height="1350" viewBox="0 0 1080 1350">
+    <path d="M540 1290 C540 1180 530 1120 520 1060 C500 980 300 960 270 860 C250 790 280 740 300 700" fill="none" stroke="#B4572F" stroke-width="7" stroke-linecap="round" stroke-dasharray="0 20"/>
+    <path d="M520 1060 C560 960 800 960 820 860 C840 790 790 740 780 700" fill="none" stroke="#B4572F" stroke-width="7" stroke-linecap="round" stroke-dasharray="0 20"/>
+    <circle cx="300" cy="690" r="11" fill="#24372C"/><circle cx="780" cy="690" r="11" fill="#24372C"/>
+    <circle cx="540" cy="1292" r="12" fill="#B4572F"/>
+  </svg>
+  <div class="a z" style="left:92px;top:250px;width:420px">
+    <div class="h" style="font-size:52px;line-height:1.05">Some seek <span class="it">greater certainty</span></div>
+    <div class="body" style="font-size:28px;margin-top:14px">before moving forward.</div>
+  </div>
+  <div class="a z" style="left:568px;top:250px;width:420px">
+    <div class="h" style="font-size:52px;line-height:1.05">Some take <span class="it">calculated risks,</span></div>
+    <div class="body" style="font-size:28px;margin-top:14px">acting with agility, learning from outcomes and course-correcting along the way.</div>
+  </div>
+  <div class="a z" style="left:92px;right:92px;top:1090px;text-align:center"><span style="background:rgba(251,246,238,.9);padding:14px 26px;font-size:32px;color:var(--ink)">Neither approach is inherently <span class="it" style="font-size:38px">right or wrong.</span></span></div>
+</div>
+
+<!-- ================= 07 THE BALANCE ================= -->
+<div class="a" style="left:6480px;top:0;width:1080px;height:1350px">
+  <div class="mist" style="opacity:.4"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>07 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:182px">The real strength</div>
+  <div class="a z h" style="left:92px;right:92px;top:232px;font-size:92px;line-height:1">lies in finding <span class="it">the balance.</span></div>
+  <div class="a z" style="left:92px;right:92px;top:540px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
+    <div class="card"><div class="k">Enough</div><div class="h v">deliberation</div><div class="body">to be responsible.</div></div>
+    <div class="card"><div class="k">Enough</div><div class="h v">decisiveness</div><div class="body">to not get stuck.</div></div>
+  </div>
+  <div class="a z body" style="left:92px;right:110px;top:960px;font-size:33px;color:var(--ink)">In the end, all the analysis and wisdom gathered along the way means little if it is <span class="it" style="font-size:38px">never put into action.</span></div>
+  <style>
+    .card{background:rgba(251,246,238,.85);padding:40px 36px;border-top:4px solid var(--terra)}
+    .card .k{font-size:20px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--terra)}
+    .card .v{font-size:60px;line-height:1.05;margin:10px 0 8px}
+    .card .body{font-size:30px}
+  </style>
+</div>
+
+<!-- ================= 08 WHAT WE NEED ================= -->
+<div class="a" style="left:7560px;top:0;width:1080px;height:1350px">
+  <div class="mist" style="opacity:.3"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>08 / 10</span></div>
+  <div class="a z h" style="left:92px;right:92px;top:170px;font-size:62px;line-height:1.08">In leadership, we will rarely have 100% information or <span class="it">100% certainty.</span></div>
+  <div class="a z lbl" style="left:92px;top:430px">What we need instead</div>
+  <div class="a z" style="left:92px;right:92px;top:480px">
+    <div class="need"><span class="h n">The judgement</span><span class="body">to assess the risk</span></div>
+    <div class="need"><span class="h n">The conviction</span><span class="body">to make the decision</span></div>
+    <div class="need"><span class="h n">The humility</span><span class="body">to acknowledge when we are wrong</span></div>
+    <div class="need"><span class="h n">The agility</span><span class="body">to change course without losing momentum</span></div>
+  </div>
+  <style>
+    .need{display:grid;grid-template-columns:400px 1fr;align-items:baseline;gap:20px;padding:36px 0;border-top:1.5px solid rgba(36,55,44,.2)}
+    .need:last-child{border-bottom:1.5px solid rgba(36,55,44,.2)}
+    .need .n{font-size:56px;line-height:1}
+    .need .body{font-size:30px;line-height:1.3}
+  </style>
+</div>
+
+<!-- ================= 09 THE DISCIPLINE ================= -->
+<div class="a" style="left:8640px;top:0;width:1080px;height:1350px">
+  <div class="mist" style="opacity:.15"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>09 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:182px">That is the discipline</div>
+  <svg class="a z" style="left:0;top:0" width="1080" height="1350" viewBox="0 0 1080 1350">
+    <path d="M150 1230 C330 1210 420 1150 380 1060 C340 970 520 930 620 900 C760 860 820 800 700 740 C580 680 640 610 790 580 C900 558 930 500 880 440" fill="none" stroke="#B4572F" stroke-width="7" stroke-linecap="round" stroke-dasharray="0 20"/>
+    <g fill="#24372C"><circle cx="150" cy="1230" r="13"/><circle cx="388" cy="1050" r="13"/><circle cx="640" cy="895" r="13"/><circle cx="702" cy="742" r="13"/><circle cx="880" cy="440" r="15" fill="#B4572F"/></g>
+    <g fill="none" stroke="#24372C" stroke-width="2" opacity=".5"><circle cx="150" cy="1230" r="24"/><circle cx="388" cy="1050" r="24"/><circle cx="640" cy="895" r="24"/><circle cx="702" cy="742" r="24"/><circle cx="880" cy="440" r="28" stroke="#B4572F"/></g>
+  </svg>
+  <div class="a z wp" style="left:186px;top:1206px">Thinking <span class="it">deeply</span></div>
+  <div class="a z wp" style="left:424px;top:1026px">Deciding <span class="it">thoughtfully</span></div>
+  <div class="a z wp" style="left:92px;top:872px">Acting <span class="it">courageously</span></div>
+  <div class="a z wp" style="left:740px;top:718px">Learning <span class="it">quickly</span></div>
+  <div class="a z wp" style="left:430px;top:416px">Adapting <span class="it">continuously</span></div>
+  <style>.wp{font-family:"Switzer";font-weight:300;font-size:44px;letter-spacing:-.03em;color:var(--ink);background:rgba(251,246,238,.82);padding:2px 10px}</style>
+</div>
+
+<!-- ================= 10 CLOSE ================= -->
+<div class="a" style="left:9720px;top:0;width:1080px;height:1350px">
+  <div class="a" style="left:240px;top:-240px;width:1000px;height:1000px;background:radial-gradient(closest-side,rgba(244,190,140,.5),rgba(244,190,140,0));z-index:3"></div>
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>10 / 10</span></div>
+  <div class="a z lbl" style="left:92px;top:182px">What leadership asks for</div>
+  <div class="a z h" style="left:92px;right:92px;top:232px;font-size:70px;line-height:1.06">The judgement and the courage to keep deciding and keep moving forward, <span class="it">without waiting for perfect information.</span></div>
+  <div class="a z" style="left:92px;right:92px;top:710px">
+    <div class="cta"><span class="lbl">Save</span><span>for the next decision you are sitting on</span></div>
+    <div class="cta"><span class="lbl">Send</span><span>to someone still waiting for perfect information</span></div>
+  </div>
+  <div class="a z" style="left:92px;bottom:60px;display:flex;align-items:center;gap:26px">
+    <img src="assets/logo.png" style="height:104px;display:block">
+    <span style="width:1.5px;height:76px;background:rgba(36,55,44,.3);display:block"></span>
+    <div><div style="font-size:24px;font-weight:600">Sreepriya N S</div><div style="font-size:19px;color:var(--ink2);margin-top:3px">Co-Founder &amp; CEO, Entrust Family Office</div>
+      <div style="font-size:20px;color:var(--terra);margin-top:8px;font-weight:600">www.entrustfamilyoffice.com</div></div>
+  </div>
+  <style>
+    .cta{display:grid;grid-template-columns:130px 1fr;align-items:baseline;padding:26px 0;border-top:1.5px solid rgba(36,55,44,.2);font-size:31px;line-height:1.3;color:var(--ink)}
+    .cta:last-child{border-bottom:1.5px solid rgba(36,55,44,.2)}
+  </style>
+</div>
+
+<style>
+  .print{background:#FFFDF8;padding:18px 18px 70px;box-shadow:0 2px 3px rgba(60,40,20,.12),0 22px 44px -14px rgba(60,40,20,.35)}
+  .print .cap{position:absolute;left:0;right:0;bottom:20px;text-align:center;font-family:"Gambetta";font-style:italic;font-size:30px;color:var(--ink2)}
+</style>
+</div>
+</body>
+</html>
