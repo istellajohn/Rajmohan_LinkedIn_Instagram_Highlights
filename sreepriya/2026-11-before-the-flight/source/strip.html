@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Before the Flight</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --ink:#1C2740; --ink2:#4B5670; --muted:#7A8396; --burg:#7A1F3D; --brand:#600020;
+  --sky1:#DCE7F1; --sky2:#EEF1EF; --sand:#F6F1E8; --card:#FFFEFB; --line:rgba(28,39,64,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000}
+#strip{position:relative;width:12960px;height:1350px;overflow:hidden;font-family:"Switzer",sans-serif;color:var(--ink)}
+.s{position:absolute;top:0;width:1080px;height:1350px;overflow:hidden;background:linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 48%,var(--sand) 100%)}
+.s::after{content:"";position:absolute;inset:0;background:url(assets/grain.png);mix-blend-mode:multiply;pointer-events:none;z-index:30}
+.a{position:absolute}
+.top{position:absolute;top:60px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:10;
+  font-family:"Geist Mono",monospace;font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+.top .who{display:flex;align-items:center;gap:14px}
+.dots{display:inline-flex;gap:5px}.dots i{width:7px;height:7px;border-radius:50%;background:var(--brand);display:block}
+.mono{font-family:"Geist Mono",monospace;text-transform:uppercase;letter-spacing:.16em;font-size:17px;color:var(--muted);font-weight:500}
+.h{font-weight:300;letter-spacing:-.035em;color:var(--ink)}
+.it{font-family:"Gambetta",serif;font-style:italic;font-weight:300;letter-spacing:-.01em;color:var(--burg)}
+.body{font-size:32px;line-height:1.45;color:var(--ink2)}
+/* boarding-pass card */
+.pass{position:absolute;background:var(--card);border-radius:28px;box-shadow:0 1px 2px rgba(28,39,64,.08),0 24px 50px -22px rgba(28,39,64,.35)}
+.perf-v{position:absolute;top:28px;bottom:28px;width:0;border-left:3px dashed rgba(28,39,64,.18)}
+.perf-h{position:absolute;left:28px;right:28px;height:0;border-top:3px dashed rgba(28,39,64,.18)}
+.notch{position:absolute;width:44px;height:44px;border-radius:50%;background:var(--sky2)}
+.field .k{font-family:"Geist Mono",monospace;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.field .v{font-size:34px;font-weight:400;color:var(--ink);margin-top:6px;letter-spacing:-.01em}
+.stamp{position:absolute;border:4px solid var(--burg);color:var(--burg);border-radius:50%;display:grid;place-items:center;text-align:center;
+  font-family:"Geist Mono",monospace;text-transform:uppercase;letter-spacing:.14em;mix-blend-mode:multiply;opacity:.9}
+.tick{width:44px;height:44px;border:3px solid var(--ink);border-radius:8px;flex:none}
+.hint{display:flex;align-items:center;gap:14px;font-family:"Geist Mono",monospace;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--burg);font-weight:600}
+.fine{font-size:17px;line-height:1.4;color:var(--muted)}
+</style>
+</head>
+<body>
+<div id="strip">
+<script>for(let i=0;i<12;i++)document.write(`<section class="s" style="left:${i*1080}px"></section>`)</script>
+
+<!-- ================= 01 COVER ================= -->
+<div class="a" style="left:0;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>01 / 12</span></div>
+  <svg class="a" style="left:0;top:110px" width="1080" height="200" viewBox="0 0 1080 200"><path d="M80 170 C330 20 700 10 980 120" fill="none" stroke="#7A1F3D" stroke-width="2.5" stroke-dasharray="2 12" stroke-linecap="round"/>
+    <g transform="translate(960 108) rotate(24)"><path d="M0 0 l-34 -6 -8 -16 -8 2 4 16 -22 -4 -8 -8 -6 2 4 12 -4 12 6 2 8 -8 22 -4 -4 16 8 2 8 -16 34 -6z" fill="#7A1F3D"/></g></svg>
+  <div class="a mono" style="left:72px;top:300px;color:var(--burg);font-weight:600">Moving back to India?</div>
+  <div class="a h" style="left:72px;right:72px;top:344px;font-size:94px;line-height:1">Check these <span class="it">before</span> you book the flight.</div>
+  <div class="pass" style="left:72px;top:640px;width:936px;height:460px">
+    <div class="perf-v" style="left:680px"></div>
+    <div class="notch" style="left:658px;top:-22px"></div><div class="notch" style="left:658px;bottom:-22px"></div>
+    <div class="a" style="left:52px;top:44px;right:300px">
+      <div class="mono" style="color:var(--burg);font-weight:600">Pre-flight check · Family relocation</div>
+      <div style="display:flex;align-items:center;gap:26px;margin-top:26px">
+        <div><div class="h" style="font-size:76px;font-weight:400;letter-spacing:-.02em">ABROAD</div></div>
+        <svg width="70" height="28" viewBox="0 0 70 28"><path d="M2 14h60M52 4l12 10-12 10" fill="none" stroke="#1C2740" stroke-width="3"/></svg>
+        <div class="h" style="font-size:76px;font-weight:400;letter-spacing:-.02em">HOME</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px 30px;margin-top:34px">
+        <div class="field"><div class="k">Passengers</div><div class="v">You &amp; family</div></div>
+        <div class="field"><div class="k">Departs</div><div class="v it" style="font-size:36px">when the plan is ready</div></div>
+      </div>
+    </div>
+    <div class="a" style="left:720px;top:44px;right:40px">
+      <div class="field"><div class="k">Gate</div><div class="v">Before booking</div></div>
+      <div class="field" style="margin-top:22px"><div class="k">Boarding</div><div class="v">Swipe →</div></div>
+      <svg id="bc1" style="margin-top:30px" width="176" height="96"></svg>
+    </div>
+  </div>
+  <div class="a" style="left:72px;bottom:56px;display:flex;align-items:center;gap:22px">
+    <img src="assets/logo.png" style="height:80px;display:block">
+    <span style="width:1.5px;height:56px;background:rgba(28,39,64,.3);display:block"></span>
+    <div><div style="font-size:22px;font-weight:600">Sreepriya N S</div><div style="font-size:18px;color:var(--ink2);margin-top:3px">Co-Founder &amp; CEO, Entrust Family Office</div></div>
+  </div>
+</div>
+
+<!-- ================= 02 THE STORY ================= -->
+<div class="a" style="left:1080px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>02 / 12</span></div>
+  <div class="pass" style="left:72px;top:190px;width:936px;height:500px;transform:rotate(-1.2deg)">
+    <div class="a mono" style="left:56px;top:50px">As told to Business Insider</div>
+    <div class="a" style="left:48px;top:96px;font-family:Gambetta;font-size:150px;line-height:.8;color:var(--burg)">&ldquo;</div>
+    <div class="a" style="left:56px;right:56px;top:190px;font-family:Gambetta;font-weight:300;font-size:56px;line-height:1.14;color:var(--ink);letter-spacing:-.01em">I built a tech career in the US, became a citizen, got married, and had kids. <i style="color:var(--burg)">We'll finish raising them in India.</i></div>
+  </div>
+  <div class="a body" style="left:72px;right:90px;top:780px;font-size:34px">Eighteen years in the US. Now back in Bengaluru, so his children can grow up closer to grandparents, extended family and the culture he grew up in.</div>
+  <div class="a h" style="left:72px;right:72px;top:1030px;font-size:64px;line-height:1.08">It is a <span class="it">familiar story</span> right now.</div>
+  <div class="a body" style="left:72px;right:90px;top:1130px;font-size:29px">For many Indians abroad, "what's next" now means home, not just the next role.</div>
+</div>
+
+<!-- ================= 03 THE GAP ================= -->
+<div class="a" style="left:2160px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>03 / 12</span></div>
+  <div class="a h" style="left:72px;right:72px;top:170px;font-size:84px;line-height:1.02">The story usually stops at <span class="it">the decision.</span></div>
+  <svg class="a" style="left:0;top:520px" width="1080" height="420" viewBox="0 0 1080 420">
+    <line x1="120" y1="250" x2="960" y2="250" stroke="#1C2740" stroke-width="3" stroke-dasharray="3 14" stroke-linecap="round"/>
+    <circle cx="120" cy="250" r="20" fill="#1C2740"/>
+    <g transform="translate(960 250)"><circle r="36" fill="#7A1F3D"/><path d="M14 0 l-16 -3 -4 -8 -4 1 2 8 -10 -2 -4 -4 -3 1 2 6 -2 6 3 1 4 -4 10 -2 -2 8 4 1 4 -8 16 -3z" fill="#fff" transform="scale(1.2)"/></g>
+    <path d="M180 170 Q180 130 220 130 H880 Q920 130 920 170" fill="none" stroke="#7A1F3D" stroke-width="3"/>
+    <text x="120" y="320" text-anchor="middle" font-family="Geist Mono" font-size="18" letter-spacing="3" fill="#4B5670">DECISION</text>
+    <text x="960" y="330" text-anchor="middle" font-family="Geist Mono" font-size="18" letter-spacing="3" fill="#4B5670">LANDING</text>
+  </svg>
+  <div class="a" style="left:72px;right:72px;top:560px;text-align:center"><span class="mono" style="color:var(--burg);font-weight:600">This part</span></div>
+  <div class="a body" style="left:72px;right:90px;top:960px;font-size:36px;color:var(--ink)">The much harder part is everything that has to be planned between that decision and the day the family actually lands.</div>
+</div>
+
+<!-- ================= 04 CHECKLIST ================= -->
+<div class="a" style="left:3240px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>04 / 12</span></div>
+  <div class="a mono" style="left:72px;top:160px;color:var(--burg);font-weight:600">Your pre-flight check</div>
+  <div class="a h" style="left:72px;right:72px;top:200px;font-size:76px;line-height:1">Tick everything that <span class="it">applies to you.</span></div>
+  <div class="pass" style="left:72px;top:430px;width:936px;height:720px;padding:30px 52px">
+    <div class="chk"><span class="tick"></span>RSUs or ESOPs from an employer abroad</div>
+    <div class="chk"><span class="tick"></span>A large share of your wealth in one company's stock</div>
+    <div class="chk"><span class="tick"></span>Retirement accounts abroad (401(k), IRA, pension)</div>
+    <div class="chk"><span class="tick"></span>Property or bank accounts you plan to keep abroad</div>
+    <div class="chk"><span class="tick"></span>Children whose school year decides the timing</div>
+    <div class="chk" style="border-bottom:none"><span class="tick"></span>Foreign citizenship, yours or your children's</div>
+  </div>
+  <div class="a hint" style="left:72px;top:1190px"><svg width="30" height="30" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="#7A1F3D" stroke-width="1.8"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="#7A1F3D" stroke-width="1.8"/></svg>Screenshot and tick yours</div>
+  <div class="a body" style="left:72px;top:1236px;font-size:28px;color:var(--ink)">Three or more? <b style="font-weight:600">The next slides are for you.</b></div>
+  <style>.chk{display:flex;align-items:center;gap:28px;padding:30px 0;border-bottom:1.5px solid var(--line);font-size:32px;line-height:1.25;color:var(--ink)}</style>
+</div>
+
+<!-- ================= 05 QUIZ 1 ================= -->
+<div class="a" style="left:4320px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>05 / 12</span></div>
+  <div class="a mono" style="left:72px;top:160px;color:var(--burg);font-weight:600">Quick question · 01</div>
+  <div class="a h" style="left:72px;right:72px;top:200px;font-size:76px;line-height:1.02">You hold stock built up over years abroad. <span class="it">When should you start unwinding it?</span></div>
+  <div class="a" style="left:72px;right:72px;top:600px">
+    <div class="opt pass"><span class="L">A</span><span>After you land in India</span></div>
+    <div class="opt pass"><span class="L">B</span><span>Before you move, to be safe</span></div>
+    <div class="opt pass"><span class="L">C</span><span>It depends on your tax status when you sell</span></div>
+  </div>
+  <div class="a hint" style="left:72px;top:1220px">Pick one. The answer is on the next slide →</div>
+  <style>.opt{position:relative;display:flex;align-items:center;gap:32px;padding:30px 40px;margin-bottom:26px;font-size:34px;color:var(--ink)}
+  .opt .L{width:64px;height:64px;border-radius:50%;border:3px solid var(--ink);display:grid;place-items:center;font-family:"Geist Mono";font-size:26px;flex:none}</style>
+</div>
+
+<!-- ================= 06 REVEAL 1 ================= -->
+<div class="a" style="left:5400px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>06 / 12</span></div>
+  <div class="stamp" style="left:690px;top:150px;width:300px;height:300px;transform:rotate(-12deg)"><div><div style="font-size:18px">Answer</div><div style="font-family:Gambetta;font-style:italic;font-size:150px;line-height:1;letter-spacing:0;text-transform:none">C</div></div></div>
+  <div class="a h" style="left:72px;right:420px;top:200px;font-size:72px;line-height:1.02">It depends on your <span class="it">status</span> when you sell.</div>
+  <div class="a body" style="left:72px;right:90px;top:560px;font-size:34px;color:var(--ink)">RSUs, ESOPs and concentrated stock built up over years abroad need a plan for when and how to unwind that concentration, without taking an unnecessary hit.</div>
+  <div class="pass" style="left:72px;top:840px;width:936px;height:300px;padding:44px 52px">
+    <div class="mono" style="color:var(--burg);font-weight:600">Why the timing matters</div>
+    <div class="h" style="font-size:46px;line-height:1.12;margin-top:18px">The same sale can be taxed differently depending on <span class="it">which status window</span> you are in.</div>
+  </div>
+  <div class="a fine" style="left:72px;top:1190px">General information, not tax advice.</div>
+</div>
+
+<!-- ================= 07 THREE STATUSES ================= -->
+<div class="a" style="left:6480px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>07 / 12</span></div>
+  <div class="a mono" style="left:72px;top:160px;color:var(--burg);font-weight:600">Three status windows</div>
+  <div class="a h" style="left:72px;right:72px;top:200px;font-size:72px;line-height:1.02">Each one changes <span class="it">what gets taxed, and where.</span></div>
+  <div class="a" style="left:72px;right:72px;top:470px">
+    <div class="st pass"><div class="code">NRI</div><div><div class="t">Non-resident</div><div class="d">Broadly, only income earned or received in India is taxed in India.</div></div></div>
+    <div class="st pass hi"><div class="code">RNOR</div><div><div class="t">Resident but not ordinarily resident</div><div class="d">The transition window. Income earned and received outside India is generally not taxed in India, with some exceptions.</div></div></div>
+    <div class="st pass"><div class="code">ROR</div><div><div class="t">Resident</div><div class="d">Your worldwide income is taxed in India.</div></div></div>
+  </div>
+  <div class="a fine" style="left:72px;right:72px;top:1250px">General information under India's Income-tax Act, 2025. Your adviser should confirm your status each year.</div>
+  <style>.st{position:relative;display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;padding:46px 44px;margin-bottom:30px}
+  .st .code{font-family:"Geist Mono";font-size:40px;letter-spacing:.06em;color:var(--ink);font-weight:500}
+  .st .t{font-size:33px;font-weight:600;color:var(--ink)} .st .d{font-size:29px;line-height:1.38;color:var(--ink2);margin-top:8px}
+  .st.hi{outline:3px solid var(--burg)} .st.hi .code{color:var(--burg)}</style>
+</div>
+
+<!-- ================= 08 QUIZ 2 ================= -->
+<div class="a" style="left:7560px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>08 / 12</span></div>
+  <div class="a mono" style="left:72px;top:160px;color:var(--burg);font-weight:600">Quick question · 02</div>
+  <div class="a h" style="left:72px;right:72px;top:200px;font-size:76px;line-height:1.02">For a long-time NRI, how long can the <span class="it">RNOR window</span> last?</div>
+  <div class="a" style="left:72px;right:72px;top:600px">
+    <div class="opt pass"><span class="L">A</span><span>One tax year</span></div>
+    <div class="opt pass"><span class="L">B</span><span>Up to two or three tax years</span></div>
+    <div class="opt pass"><span class="L">C</span><span>About six months</span></div>
+  </div>
+  <div class="a hint" style="left:72px;top:1220px">Guess, then swipe →</div>
+</div>
+
+<!-- ================= 09 REVEAL 2 ================= -->
+<div class="a" style="left:8640px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>09 / 12</span></div>
+  <div class="stamp" style="left:690px;top:150px;width:300px;height:300px;transform:rotate(10deg)"><div><div style="font-size:18px">Answer</div><div style="font-family:Gambetta;font-style:italic;font-size:150px;line-height:1;letter-spacing:0;text-transform:none">B</div></div></div>
+  <div class="a h" style="left:72px;right:420px;top:200px;font-size:72px;line-height:1.02">Often up to <span class="it">two or three tax years.</span></div>
+  <div class="a body" style="left:72px;right:90px;top:520px;font-size:32px;color:var(--ink)">It depends on your history and travel dates. You remain RNOR if either is true:</div>
+  <div class="a" style="left:72px;right:72px;top:660px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div class="pass" style="position:relative;padding:36px 36px"><div class="h" style="font-size:66px;font-weight:400">9 <span style="font-size:34px;color:var(--ink2)">of 10</span></div><div class="body" style="font-size:25px;margin-top:8px">previous tax years as a non-resident</div></div>
+    <div class="pass" style="position:relative;padding:36px 36px"><div class="h" style="font-size:66px;font-weight:400">≤ 729 <span style="font-size:34px;color:var(--ink2)">days</span></div><div class="body" style="font-size:25px;margin-top:8px">in India over the previous seven tax years</div></div>
+  </div>
+  <div class="a" style="left:72px;right:72px;top:960px;padding:26px 30px;border-left:4px solid var(--burg);background:rgba(255,254,251,.7)">
+    <div class="mono" style="color:var(--burg);font-weight:600">Also a US citizen?</div>
+    <div class="body" style="font-size:26px;margin-top:8px;color:var(--ink)">The US taxes its citizens' worldwide income wherever they live. Plan both sides.</div>
+  </div>
+  <div class="a fine" style="left:72px;right:72px;top:1250px">General information under India's Income-tax Act, 2025. Not tax advice.</div>
+</div>
+
+<!-- ================= 10 A OR B ================= -->
+<div class="a" style="left:9720px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>10 / 12</span></div>
+  <div class="a mono" style="left:72px;top:160px;color:var(--burg);font-weight:600">Which order is yours?</div>
+  <div class="a h" style="left:72px;right:72px;top:200px;font-size:72px;line-height:1.02">Build the move around the money, <span class="it">not the other way round.</span></div>
+  <div class="a" style="left:72px;right:72px;top:500px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
+    <div class="pass ord"><div class="lab">Order A</div><div class="stp">Book the flight</div><div class="stp">Move the family</div><div class="stp">Sort out shares and tax</div></div>
+    <div class="pass ord hi"><div class="lab">Order B</div><div class="stp">Map your status windows</div><div class="stp">Plan investments and tax</div><div class="stp">Then book the flight</div></div>
+  </div>
+  <div class="a" style="left:72px;right:72px;top:1120px;display:flex;align-items:center;gap:18px">
+    <svg width="40" height="40" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="#7A1F3D" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    <span class="h" style="font-size:44px">Comment <b style="font-weight:600;color:var(--burg)">A</b> or <b style="font-weight:600;color:var(--burg)">B</b>.</span></div>
+  <div class="a body" style="left:72px;right:72px;top:1190px;font-size:26px">Honest answers welcome.</div>
+  <style>.ord{position:relative;padding:40px 36px 30px}
+  .ord .lab{font-family:"Geist Mono";font-size:20px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .ord .stp{counter-increment:s;font-size:30px;line-height:1.25;padding:22px 0;border-top:1.5px solid var(--line);color:var(--ink)}
+  .ord .stp::before{content:counter(s) "  ";font-family:"Geist Mono";color:var(--muted);font-size:22px}
+  .ord.hi{outline:3px solid var(--burg)} .ord.hi .lab{color:var(--burg);font-weight:600}</style>
+</div>
+
+<!-- ================= 11 ONE CONVERSATION ================= -->
+<div class="a" style="left:10800px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>11 / 12</span></div>
+  <div class="a mono" style="left:72px;top:160px;color:var(--burg);font-weight:600">Where Entrust's NRI work sits</div>
+  <div class="a h" style="left:72px;right:72px;top:200px;font-size:84px;line-height:1">One conversation, <span class="it">not five separate ones.</span></div>
+  <svg class="a" style="left:0;top:470px" width="1080" height="640" viewBox="0 0 1080 640">
+    <g fill="none" stroke="#7A1F3D" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round">
+      <path d="M498 64 C540 64 540 200 540 348"/><path d="M600 64 C540 64 540 200 540 348"/>
+      <path d="M368 214 C470 214 540 250 540 348"/><path d="M600 214 C560 214 540 250 540 348"/>
+    </g>
+  </svg>
+  <div class="a chip" style="left:72px;top:500px">Cross-border wealth planning</div>
+  <div class="a chip" style="left:600px;top:500px">Investment restructuring</div>
+  <div class="a chip" style="left:72px;top:650px">Tax considerations</div>
+  <div class="a chip" style="left:600px;top:650px">Estate planning</div>
+  <div class="pass" style="left:290px;top:820px;width:500px;height:250px;display:grid;place-items:center;text-align:center">
+    <div><img src="assets/logo.png" style="height:96px;display:block;margin:0 auto"><div class="h" style="font-size:34px;margin-top:14px">brought together</div></div>
+  </div>
+  <div class="a body" style="left:72px;right:72px;top:1130px;font-size:28px;text-align:center">So the decisions are made in the right order, by people who can see all of them.</div>
+  <style>.chip{background:var(--card);border:2px solid rgba(28,39,64,.16);border-radius:60px;padding:20px 30px;font-size:27px;color:var(--ink);box-shadow:0 10px 24px -16px rgba(28,39,64,.4)}</style>
+</div>
+
+<!-- ================= 12 CLOSE / CTA ================= -->
+<div class="a" style="left:11880px;top:0;width:1080px;height:1350px;z-index:5">
+  <div class="top"><span class="who"><span class="dots"><i></i><i></i><i></i></span>Sreepriya N S</span><span>12 / 12</span></div>
+  <div class="a h" style="left:72px;right:72px;top:170px;font-size:78px;line-height:1.02">If coming home is in your next few years, think it through <span class="it">long before the flight is booked.</span></div>
+  <div class="pass" style="left:72px;top:560px;width:936px;height:430px;padding:20px 52px">
+    <div class="cta"><span class="ic">Save</span><span>for the year you start planning</span></div>
+    <div class="cta"><span class="ic">Send</span><span>to the friend who keeps saying <i class="it" style="font-size:32px">"we'll move back in a few years"</i></span></div>
+    <div class="cta" style="border-bottom:none"><span class="ic">Read</span><span><b style="font-weight:600">Ghar Wapasi 2.0</b>, our guide to a thoughtful return. Link in bio.</span></div>
+  </div>
+  <div class="a" style="left:72px;bottom:60px;display:flex;align-items:center;gap:26px">
+    <img src="assets/logo.png" style="height:104px;display:block">
+    <span style="width:1.5px;height:76px;background:rgba(28,39,64,.3);display:block"></span>
+    <div><div style="font-size:24px;font-weight:600">Sreepriya N S</div><div style="font-size:19px;color:var(--ink2);margin-top:3px">Co-Founder &amp; CEO, Entrust Family Office</div>
+      <div style="font-family:'Geist Mono';font-size:19px;color:var(--burg);margin-top:8px">www.entrustfamilyoffice.com</div></div>
+  </div>
+  <style>.cta{display:grid;grid-template-columns:120px 1fr;align-items:baseline;padding:30px 0;border-bottom:1.5px solid var(--line);font-size:30px;line-height:1.3;color:var(--ink)}
+  .cta .ic{font-family:"Geist Mono";font-size:19px;letter-spacing:.16em;text-transform:uppercase;color:var(--burg);font-weight:600}</style>
+</div>
+
+</div>
+<script>
+// boarding-pass barcode
+(function(){const s=document.getElementById('bc1');const ns='http://www.w3.org/2000/svg';let x=0,seed=7;
+const r=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+while(x<176){const w=1+Math.floor(r()*4);if(r()>.35){const b=document.createElementNS(ns,'rect');b.setAttribute('x',x);b.setAttribute('y',0);b.setAttribute('width',w);b.setAttribute('height',96);b.setAttribute('fill','#1C2740');s.appendChild(b)}x+=w+1}})();
+</script>
+</body>
+</html>
